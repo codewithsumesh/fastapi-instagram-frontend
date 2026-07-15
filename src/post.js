@@ -105,7 +105,7 @@ function Post({post,authToken,authTokenType,username}){
                 alt='Sumesh'
                 src=''/>
                 <div className='post_headerInfo'>
-                    <h3>{post.user.username}</h3>
+                    <h3>{post.user?.username}</h3>
                     <button className='post_delete' onClick={handleDelete}>Delete</button>
                 </div>
             </div>
