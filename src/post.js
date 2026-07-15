@@ -34,15 +34,18 @@ function Post({post,authToken,authTokenType,username}){
                 'Authorization':authTokenType + ' ' + authToken
             })
         }
-        fetch(BASE_URL + 'post/delete/'+ post.id,requestOptions)
-        .then(response=>{
-            if(response.ok){
-                window.location.reload()
-            }
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+        fetch(BASE_URL + 'post/delete/' + post.id, requestOptions)
+            .then(async (response) => {
+                if (response.ok) {
+                    window.location.reload();
+                } else {
+                    const data = await response.json();
+                    alert(data.detail);
+                }
+            })
+            .catch(error => {
+                console.log(error);
+        });
     }
     const postComment = (event)=>{
         event?.preventDefault()
