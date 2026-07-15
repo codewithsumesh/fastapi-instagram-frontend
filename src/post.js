@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import './post.css'
 import { Avatar,Button} from '@material-ui/core'
 
-const BASE_URL = 'https://fastapi-instagram-backend-1.onrender.com'
+const BASE_URL = 'https://fastapi-instagram-backend-1.onrender.com/'
 //Text → useState('')
 //Number → useState(0)
 //True/False → useState(false)

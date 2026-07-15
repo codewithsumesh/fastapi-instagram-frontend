@@ -9,7 +9,7 @@ import Input from '@material-ui/core/Input';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import ImageUpload from './imageUpload';
 
-const BASE_URL = 'https://fastapi-instagram-backend-1.onrender.com'
+const BASE_URL = 'https://fastapi-instagram-backend-1.onrender.com/'
 
 function getModalStyle(){  //decides where the popup appears
   const top = 50;

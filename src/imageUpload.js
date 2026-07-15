@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from '@material-ui/core/Button';
 import './imageUpload.css'
 
-const BASE_URL = 'https://fastapi-instagram-backend-1.onrender.com'
+const BASE_URL = 'https://fastapi-instagram-backend-1.onrender.com/'
 
 function ImageUpload({authToken,authTokenType,userId}){    //{}passes props
 const [caption,setCaption]= useState('');
